@@ -1,0 +1,58 @@
+.cb--paginate {
+    display: flex;
+    font-size: 0.9rem;
+}
+
+.cb--paginate > div {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.cb--paginate > div:not(:first-child) {
+    margin-left: 3px;
+}
+
+.cb--paginate > div:hover {
+    background-color: #ddd;
+}
+
+.cb--paginate > div.active {
+    color: #fff;
+    cursor: not-allowed;
+    background-color: #243241;
+}
+
+.cb--paginate-prev::before {
+    content: "";
+    width: 0;
+    height: 0;
+    border-right: 6px solid transparent;
+    border-left: 6px solid transparent;
+    border-top: 6px solid #565656;
+    transform: rotate(90deg);
+}
+
+.cb--paginate-next::after {
+    content: "";
+    width: 0;
+    height: 0;
+    border-right: 6px solid transparent;
+    border-left: 6px solid transparent;
+    border-top: 6px solid #565656;
+    transform: rotate(-90deg);
+}
+
+.cb--paginate > div.disabled {
+    color: #fff;
+    cursor: not-allowed;
+}
+
+.cb--paginate > div.disabled::before,
+.cb--paginate > div.disabled::after {
+    border-top: 6px solid #b9b9b9;
+}
