@@ -49,6 +49,13 @@ const state = reactive({
 | map   | number | 5       |
 | skip  | number | 1       |
 
+## Slots
+
+| name  |
+| ----- |
+| first |
+| last  |
+
 ## 📑 License
 
 [MIT License](./LICENSE)

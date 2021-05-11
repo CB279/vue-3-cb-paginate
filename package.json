@@ -1,6 +1,6 @@
 {
     "name": "@vue-cb/paginate",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "vue 3, paginate",
     "main": "lib/index.js",
     "directories": {
